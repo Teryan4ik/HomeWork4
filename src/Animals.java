@@ -1,5 +1,4 @@
 public class Animals {
-    //    public static String toString;
     private String name;
     private int occurrence;
 
