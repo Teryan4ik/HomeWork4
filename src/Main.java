@@ -1,10 +1,11 @@
 import phonebook.Record;
-import phonebook.PhoneBook;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import static phonebook.PhoneBook.mapPhoneBook;
+
+import static phonebook.PhoneBook.*;
 import static phonebook.Record.recordList;
 
 
@@ -12,17 +13,24 @@ public class Main {
     public static int count;
 
     public static void main(String[] args) {
-        Record record1 = new Record("A.S.","#1");             //test
-        PhoneBook record2 = new PhoneBook("A.S.","#2");       //test
-        Record record3 = new Record("A.S.3","#3");            //test
-        PhoneBook record4 = new PhoneBook("A.S.4","#4");      //test
-        Record record5 = new Record("A.S.5","#5");            //test
-        PhoneBook record6 = new PhoneBook("A.S.6","#6");      //test
-        System.out.println(recordList+"recordList");//test
-        System.out.println(mapPhoneBook+"mapPhoneBook main");                   //test
-        System.out.println(recordList+"recordList final");                      //test
-        System.out.println(mapPhoneBook+"mapPhoneBook main final");             //test
+        Record record1 = new Record("Andrey", "#1");
+        add(recordList);
+        Record record2 = new Record("Andrey", "#2");
+        add(recordList);
+        Record record3 = new Record("Andrey", "#3");
+        add(recordList);
+        Record record4 = new Record("Sergey", "#4");
+        add(recordList);
+        Record record5 = new Record("Sergey", "#5");
+        add(recordList);
+        Record record6 = new Record("Nikolay", "#6");
+        add(recordList);
+        find("Andrey");
+        findAll("Andrey");
+
+
         String[] array = new String[]{"dog", "cat", "dog", "bird", "fox", "cat", "fox", "dog", "bird", "mouse"};
+
         List<String> arrayList = Arrays.asList(array);
         List<Integer> arrayList2 = new ArrayList<>(Arrays.asList(11, 5, 2, 1, 3, 4, 7, 1, 3, 0, 5, 2, 6, 1, 4, 7, 8, 9, 5, 6, 3, 4, 5, 6, 4, 7));
 

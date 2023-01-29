@@ -13,12 +13,9 @@ public class Record {
         this.name = name;
         this.phoneNumber = phoneNumber;
         addRecord(name, phoneNumber);
-
-
     }
 
     public void addRecord(String name, String phoneNumber) {
-//        recordList.add(0,name);
         recordList.add(this.name);
         recordList.add(this.phoneNumber);
     }
